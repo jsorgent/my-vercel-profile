@@ -105,8 +105,8 @@ export async function Profile({
             </>
           ) : (
             <p>
-              Middleware wasn't able to geolocate your IP. You may want to try a
-              different device or network.
+              Middleware wasn't able to geolocate your IP. Consider entering your hometown details in the form on this page to have your city's nicknames added. You may want to try a
+              different device or network. 
             </p>
           )}
         </div>
