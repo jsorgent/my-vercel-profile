@@ -1,69 +1,32 @@
 /**
  * v0 by Vercel.
- * @see https://v0.dev/t/0AwQeZp
+ * @see https://v0.dev/t/NCPPdNrjYGV
  */
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
-import { SelectValue, SelectTrigger, SelectLabel, SelectItem, SelectGroup, SelectContent, Select } from "@/components/ui/select"
-import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
-import { CardContent, Card } from "@/components/ui/card"
 
 export default function Component() {
   return (
-    <div className="flex items-center justify-center h-screen bg-green-500">
-      <Card>
-        <CardContent>
-          <div className="space-y-8">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-semibold">Contact Us</h2>
-              <p className="text-zinc-500 dark:text-zinc-400">
-                Fill out the form below and we'll get back to you as soon as possible.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="first-name">First name</Label>
-                  <Input id="first-name" placeholder="Enter your first name" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="last-name">Last name</Label>
-                  <Input id="last-name" placeholder="Enter your last name" />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input id="email" placeholder="Enter your email" type="email" />
-              </div>
-              <div className="space-y-2">
-                <Label>Pronoun</Label>
-                <Select>
-                  <SelectTrigger aria-label="Pronoun">
-                    <SelectValue placeholder="Select your pronoun" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectGroup>
-                      <SelectLabel>Pronouns</SelectLabel>
-                      <SelectItem value="he/him">He/Him</SelectItem>
-                      <SelectItem value="she/her">She/Her</SelectItem>
-                      <SelectItem value="they/them">They/Them</SelectItem>
-                      <SelectItem value="prefer not to say">Prefer not to say</SelectItem>
-                    </SelectGroup>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="message">Message</Label>
-                <Textarea className="min-h-[100px]" id="message" placeholder="Enter your message" />
-              </div>
-              <Button className="bg-gray-800 text-white" type="submit">
-                Send message
-              </Button>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+    <div className="mx-auto max-w-sm space-y-6">
+      <div className="space-y-2 text-center">
+        <h1 className="text-3xl font-bold">Love your city?</h1>
+        <p className="text-zinc-500 dark:text-zinc-400">Enter your home town and nicknames.</p>
+      </div>
+      <form action="mailto:jaime.sorgente@vercel.com" className="space-y-4" enctype="text/plain" method="post">
+        <div className="space-y-2">
+          <Label htmlFor="home-town">Home Town</Label>
+          <Input id="home-town" name="home-town" placeholder="Enter your home town" required />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="nicknames">Nicknames</Label>
+          <Input id="nicknames" name="nicknames" placeholder="Enter your nicknames separated by commas" required />
+        </div>
+        <Button className="w-full" type="submit">
+          Submit
+        </Button>
+      </form>
+      <div className="text-center text-zinc-500 dark:text-zinc-400">Your information has been saved successfully.</div>
     </div>
   )
 }
