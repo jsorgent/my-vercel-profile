@@ -62,6 +62,8 @@ export default function Component() {
               </Button>
             </div>
           </div>
+          <script type="text/javascript" src="http://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=d3482b5d23be15f7de318051bb25906765173681"></script>
+
         </CardContent>
       </Card>
     </div>
