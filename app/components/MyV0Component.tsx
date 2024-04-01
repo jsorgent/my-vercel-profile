@@ -8,7 +8,7 @@ import { SelectValue, SelectTrigger, SelectLabel, SelectItem, SelectGroup, Selec
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { CardContent, Card } from "@/components/ui/card"
-
+<script type="text/javascript" src="http://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=d3482b5d23be15f7de318051bb25906765173681"></script>
 export default function Component() {
   return (
     <div className="flex items-center justify-center h-screen bg-green-500">
